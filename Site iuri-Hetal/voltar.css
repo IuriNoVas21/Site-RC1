@@ -1,0 +1,13 @@
+.voltar {
+    padding: 15px 55px;
+    font-family: 'soft', sans-serif;
+    text-decoration: none;
+    margin-left: 1cm;
+    color: #101026;
+    transition: all 0.5s;
+}
+
+.voltar:hover {
+    border-radius: 16px;
+}
+

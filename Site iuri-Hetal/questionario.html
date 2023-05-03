@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="3419303-broccoli-fruit-green-healthy-vegetable_107405.png" type="icon">
+    <link rel="stylesheet" type="text/css" href="questionario.css">
+    <link rel="stylesheet" type="text/css" href="voltar.css">
+</head>
+
+<body>
+    
+    <div class="box">
+        <form action="questionario.php" method="post">
+            <fieldset>
+                <legend><b>calculadora de IMC</b></legend>
+                <br>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <label for="alimentaocao"><b>Abitos Alimentares</b></label>
+                <select name="abitos" id="abitos">
+                    <option value="Regular">Regular</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Vegetariano">Vegetariano</option>
+                    
+                </select>
+                <br><br><br>
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+                <br><br>
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura" step="0.01" required>
+                <br><br>
+                <input type="submit" class="" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    <div style="padding-inline-end: 3cm;"><a class="voltar"href="Home.html"><button class="voltar" type="submit">Voltar</button></a></div>
+</body>
+
+</html>

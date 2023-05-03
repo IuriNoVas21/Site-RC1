@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'soft';
+    src: url(JosefinSans-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+main {
+    background-size: cover;
+    height: 92vh;
+}
+
+a {
+    color: #fff;
+    right: 1000%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu div {
+    cursor: pointer;
+}
+
+.mobile-menu {
+    margin-top: 1%;
+    margin-right: 80%;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+
+}
+
+.nav-list {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 22vw;
+    font-family: 'soft', sans-serif;
+    font-size: 1.3em;
+    height: 92vh;
+    background-color: #57bf03;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-list li {
+    margin-left: 0;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1 {
+    transition: 0.5s;
+    transform: rotate(-45deg)  translate(-8px , 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transition: 0.5s;
+    transform: rotate(45deg)  translate(-5px , -7px);
+}
